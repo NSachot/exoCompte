@@ -1,0 +1,216 @@
+/* ------------------------------------------------------------------------------------------- */ 
+/* --- Reset Styles  ------------------------------------------------------------------------- */ 
+/* --- http://meyerweb.com/eric/tools/css/reset/ - v2.0 | 20110126 --------------------------- */ 
+/* ------------------------------------------------------------------------------------------- */ 
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------------------------------- */ 
+/* --- Custom Styles ------------------------------------------------------------------------- */ 
+/* ------------------------------------------------------------------------------------------- */ 
+
+body {
+	background: url('../img/harbor1.jpg') no-repeat center fixed; 
+	background-size: cover;
+	-webkit-background-size: cover;
+	width: 100%;
+	height: 100;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	color: #24231f;
+	font-size: 3em;
+	font-weight: 400;
+	margin-top: 2em;
+	text-align: center;
+	text-shadow: 1px 1px #545454;
+}
+
+h2 {
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 200;
+	text-align: center;
+	padding: 1em;
+}
+
+a, a:hover, a:visited {
+	color: #fff;
+}
+
+::-moz-selection { background: #FABB8E; color: #fff; text-shadow: none; }
+::selection { background: #FABB8E; color: #fff; text-shadow: none; }
+
+#container {
+	width: 100%;
+	background: rgba(72, 72, 72, 0.5) none repeat scroll 0 0;
+	border-radius: 0;
+	margin: 3em auto 0;
+	font-size: 1.5em;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding-bottom: 30px;
+}
+
+form {
+	padding: 0 40px;
+}
+
+.row {
+	padding-top: 30px;
+	clear: both;
+}
+
+label {
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+}
+
+input {
+	color: black;
+	height: 2em;
+	width: 100%;
+	font-size: 1em;
+	border: none;
+	padding: 0 10px;
+}
+
+input:disabled {
+	background: rgba(72, 72, 72, 0) none repeat scroll 0 0;
+	font-weight: bold;
+}
+
+button, a.button {
+	height: 2em;
+	font-size: 1em;
+	background-color: #44433e;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	margin-top: 30px;
+	margin-right: 5%;
+	margin-left: 5%;
+	width: 90%;
+}
+
+form button, form a.button {
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+}
+
+a.button {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 0.5em;
+	height: 1.5em;
+}
+
+.account-link {
+	text-align: center;
+}
+
+hr { 
+	border: 0; 
+	height: 1px; 
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.alert {
+	font-size: 1em;
+}
+
+p.alert {
+	margin: 0 40px 20px 40px;
+	padding: 0.5em;
+}
+
+.alert li {
+	margin: 0.5em 1em;
+}
+
+.alert-danger {
+	background-color: #F2DEDE;
+	color: #B94A48;
+}
+
+.alert-danger-mini {
+	float: right;
+	font-size: 0.7em;
+}
+
+.alert-success {
+	background-color: #E5F0CB;
+	color: #3A8415;
+}
+
+/* ---- MOBILES ---------- */
+#container {
+    width: 100%;
+}
+.alert-danger-mini {
+	width: 100%;
+}
+
+
+/* ---- MEDIUM ----------- */
+@media only screen and (min-width: 800px) {
+	#container {
+        width: 70%;
+    }
+    .alert-danger-mini {
+		width: 65%;
+	}
+	label {
+		width: 30%;
+	}
+	input {
+		float: right;
+		width: 65%; /* 5% de marge pour laisser un espace entre le label et l'input */
+	}
+}
+
+/* ---- LARGE ------------ */
+@media only screen and (min-width: 1824px) {
+	#container {
+        width: 35%;
+    }
+}
