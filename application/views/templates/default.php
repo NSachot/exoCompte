@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<h1>Exercice pour Sellsy - Noémie Sachot</h1>
+	<h1>Exercice technique - Noémie Sachot</h1>
 	<div id="container">
 		<?= $content; ?>
 	</div>
